@@ -1,7 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import Homepage from './components /Homepage';
 
 function App() {
+  return(
+    <Homepage /> 
+
+  )
  
 // //const container = document.getElementById('container')
 
