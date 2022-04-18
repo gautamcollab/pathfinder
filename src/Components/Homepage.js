@@ -16,6 +16,8 @@ function Homepage() {
         <div>
             <h1>Header</h1>
         </div> 
+        <button className="char-window-button" onClick={handleCharWindClick}>{isVisible ? 'Hide Character' : 'Show Character'}</button>
+        {isVisible ? <CharacterWindow /> : null}
         <div>
             <Class />
         </div>
@@ -28,10 +30,6 @@ function Homepage() {
         <div>
             <Spells />
         </div>
-        <div className="char-window-button">
-            <button onClick={handleCharWindClick}>{isVisible ? 'Hide Character' : 'Show Character'}</button>
-            {isVisible ? <CharacterWindow /> : null}
-        </div> 
         <div>Light Mode/Dark Mode</div> 
         </>
     )

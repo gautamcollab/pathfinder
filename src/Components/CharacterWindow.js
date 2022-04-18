@@ -5,11 +5,11 @@ function CharacterWindow() {
         <div className="character-window">
             <h1>Your Character</h1>
             <img src={defaultCharacter} alt="Base Character"></img>
-            <p>Name</p>
-            <p>Class</p>
-            <p>Background</p>
-            <p>Spells</p>
-            <p>Equipment</p>
+            <p>Name: </p>
+            <p>Class: </p>
+            <p>Background Story: </p>
+            <p>Spells: </p>
+            <p>Equipment: </p>
         </div>
     )
 }
