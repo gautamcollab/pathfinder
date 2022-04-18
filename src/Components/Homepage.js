@@ -1,5 +1,6 @@
 import React from 'react'
 import Class from './Class'
+import ClassContainer from './ClassContainer'
 import Background from './Background'
 import Spells from './Spells'
 import CharacterWindow from './CharacterWindow'
