@@ -2,7 +2,7 @@ import React from 'react'
 
 
 function Class(){
-   
+    
 
     return(
        
@@ -11,5 +11,6 @@ function Class(){
         </div>
     )
 }
+
 
 export default Class;

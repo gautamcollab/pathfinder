@@ -13,7 +13,7 @@ function Homepage() {
             <h1>Header</h1>
         </div> 
         <div>
-            <Class />
+            <ClassContainer />
         </div>
         <div>
             <Background />
