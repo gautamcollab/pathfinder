@@ -1,10 +1,13 @@
 import React from 'react'
+import Class from './Class'
 
 function Homepage() {
     return (
         <>
         <div>Header</div> 
-        <div> Class </div>
+        <div>
+            <Class />
+        </div>
         <div> Background </div> 
         <div> Equipment </div> 
         <div> Spells </div>
