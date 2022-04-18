@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Class from './Class'
-import Background from './Background'
+import BackgroundContainer from './BackgroundContainer'
 import Spells from './Spells'
 import CharacterWindow from './CharacterWindow'
 import Equipment from './Equipment'
@@ -33,9 +33,9 @@ function Homepage() {
         <div>
             <Class />
         </div>
-        {background.map((element) => {
-            <Background element={element} />
-        })}
+        <div>
+            <BackgroundContainer background={background}/>
+        </div>
         <div>
             <Equipment />
         </div> 
