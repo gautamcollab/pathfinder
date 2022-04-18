@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Class from './Class'
 import Background from './Background'
 import Spells from './Spells'
@@ -6,6 +6,11 @@ import CharacterWindow from './CharacterWindow'
 import Equipment from './Equipment'
 
 function Homepage() {
+    const [isVisible, setIsVisible] = useState(true)
+    const handleCharWindClick = () => {
+        setIsVisible(!isVisible)
+    }
+
     return (
         <>
         <div>
@@ -23,8 +28,9 @@ function Homepage() {
         <div>
             <Spells />
         </div>
-        <div>
-            <CharacterWindow />
+        <div className="char-window-button">
+            <button onClick={handleCharWindClick}>{isVisible ? 'Hide Character' : 'Show Character'}</button>
+            {isVisible ? <CharacterWindow /> : null}
         </div> 
         <div>Light Mode/Dark Mode</div> 
         </>
