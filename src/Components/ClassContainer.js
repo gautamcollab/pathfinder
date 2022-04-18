@@ -13,14 +13,19 @@ function ClassContainer(){
            )
            let res = await req.json()  
            console.log(res)
-           setCharClass(res)
+           setCharClass(res.results)
        })()
    }, []) 
    
 
 
     return (
-        <Class />
+        charClass.map((element) => {
+            return(
+                
+                <Class className = {element} />
+            )
+        })
     );
 }
 

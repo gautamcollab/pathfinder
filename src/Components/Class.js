@@ -1,13 +1,11 @@
 import React from 'react' 
 
 
-function Class(){
-    
-
+function Class({className}){
+    const { name } = className
     return(
-       
         <div>
-            <h1>Class</h1>
+            <li>{name}</li>
         </div>
     )
 }
