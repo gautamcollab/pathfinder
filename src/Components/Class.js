@@ -1,6 +1,8 @@
 function Class(){
     return(
-        <div></div>
+        <div>
+            <h1>Class</h1>
+        </div>
     )
 }
 
