@@ -12,6 +12,7 @@ function BackgroundContainer() {
               )
               let res = await req.json()  
               setBackground(res.results)
+              console.log(res.results)
           })()
       }, []) 
 

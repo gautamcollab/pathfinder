@@ -1,8 +1,9 @@
-function BackgroundItem({element}) {
+function BackgroundItem({ element }) {
+    const { name, data: { description: { value } } } = element
     return(
         <div>
-            <h1>Background Item</h1>
-            <p>{element.data.description.value}</p>
+            <h1>{name}</h1>
+            <p>{value}</p>
         </div>
     )
 }
