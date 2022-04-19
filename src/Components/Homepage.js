@@ -1,40 +1,38 @@
-import React, { useEffect, useState } from 'react'
+import { useState } from 'react'
 import Class from './Class'
 import BackgroundContainer from './BackgroundContainer'
+import React from 'react'
+import ClassContainer from './ClassContainer'
 import Spells from './Spells'
 import CharacterWindow from './CharacterWindow'
 import Equipment from './Equipment'
 
 function Homepage() {
-    const [isVisible, setIsVisible] = useState(true)
-    const handleCharWindClick = () => {
-        setIsVisible(!isVisible)
-    }
+    const [isCharVisible, setCharVisible] = useState(false)
+    const [isBgVisible, setBgVisible] = useState(false)
 
-    const [background, setBackground] = useState([])
-    useEffect(() => {
-        (async () => {
-              let req = await fetch('https://api.pathfinder2.fr/v1/pf2/background',{
-              headers:{Authorization:'da468b89-2bf8-4e2b-a939-79c6e6ef25ce'}
-              }
-              )
-              let res = await req.json()  
-              setBackground(res.results)
-          })()
-      }, []) 
+    const handleCharWindClick = () => {
+        setCharVisible(!isCharVisible)
+    }
+    const handleBgStoryClick = () => {
+        setBgVisible(!isBgVisible)
+    }
 
     return (
         <>
         <div>
             <h1>Headers</h1>
         </div> 
-        <button className="char-window-button" onClick={handleCharWindClick}>{isVisible ? 'Hide Character' : 'Show Character'}</button>
-        {isVisible ? <CharacterWindow /> : null}
         <div>
-            <Class />
+            <button className="char-window-button" onClick={handleCharWindClick}>{isCharVisible ? 'Hide Character' : 'Show Character'}</button>
+            {isCharVisible ? <CharacterWindow /> : null}
         </div>
         <div>
-            <BackgroundContainer background={background}/>
+            <button>Classes</button> 
+        </div>
+        <div>
+            <button onClick={handleBgStoryClick}>Background Stories</button>
+            {isBgVisible ? <BackgroundContainer /> : null}
         </div>
         <div>
             <Equipment />

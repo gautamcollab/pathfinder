@@ -1,9 +1,14 @@
-function Class(){
+import React from 'react' 
+
+
+function Class({className}){
+    const { name } = className
     return(
         <div>
-            <h1>Class</h1>
+            <ul>{name}</ul>
         </div>
     )
 }
+
 
 export default Class;
