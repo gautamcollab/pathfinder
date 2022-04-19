@@ -1,9 +1,10 @@
 import BackgroundItem from './BackgroundItem'
 import { useEffect, useState } from 'react'
 
-function BackgroundContainer() {
+function BackgroundContainer({storyPost, setStoryPost}) {
 
     const [background, setBackground] = useState([])
+
     useEffect(() => {
         (async () => {
               let req = await fetch('https://api.pathfinder2.fr/v1/pf2/background',{
@@ -18,9 +19,9 @@ function BackgroundContainer() {
 
     return (
         <div>
-            <div>BackgroundContainer</div>
+            <div className="background-title">BackgroundContainer</div>
             {background.map(element => {
-                return <BackgroundItem key={element.id} element={element}/>
+                return <BackgroundItem key={element.id} element={element} storyPost={storyPost} setStoryPost={setStoryPost} />
             })}
         </div>
     )
