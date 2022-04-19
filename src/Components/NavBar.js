@@ -17,23 +17,23 @@ function NavBar(){
     
     return (
         <nav className="navbar"> 
-        <div>
-            <button className="char-window-button" onClick={handleCharWindClick}>{isCharVisible ? 'Hide Character' : 'Show Character'}</button>
-            {isCharVisible ? <CharacterWindow /> : null}
+            {/* <button className="char-window-button" onClick={handleCharWindClick}>{isCharVisible ? 'Hide Character' : 'Show Character'}</button>
+            {isCharVisible ? <CharacterWindow /> : null} */}
         
         
-            <button>Classes</button> 
+            <div className="navbutton">Classes</div> 
         
-        
-            <button onClick={handleBgStoryClick}>Background Stories</button>
+            <div className="navbutton" onClick={handleBgStoryClick}>Background</div>
+
+            {/* <button onClick={handleBgStoryClick}>Background Stories</button> */}
             {isBgVisible ? <BackgroundContainer /> : null}
       
-            <button>Equipment </button>
+            <div className="navbutton">Equipment </div>
       
-            <button>Spells</button>
+            <div className="navbutton">Spells</div>
      
-        <div>Light Mode/Dark Mode</div> 
-        </div>
+        {/* <div>Light Mode/Dark Mode</div>  */}
+        
         </nav>
     )
 

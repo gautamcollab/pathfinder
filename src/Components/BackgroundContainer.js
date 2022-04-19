@@ -17,7 +17,7 @@ function BackgroundContainer() {
 
     return (
         <div>
-            <div>BackgroundContainer</div>
+            {/* <div>BackgroundContainer</div> */}
             {background.map(element => {
                 return <BackgroundItem key={element.id} element={element}/>
             })}

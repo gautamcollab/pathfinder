@@ -24,6 +24,18 @@ body {
 }
 
 .navbar{
+  display: flex;
   position: fixed;
+  width: 100%;
   top: 0;
+  background-color: #708090;
+
+}
+
+.navbutton{
+  flex: auto;
+  background-color: #808080;
+  font-size: 25px;
+  border: 1px solid black;
+  padding: 7px;
 }
