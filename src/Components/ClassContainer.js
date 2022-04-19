@@ -3,6 +3,7 @@ import Class from "./Class";
 
 function ClassContainer(){
     const [charClass, setCharClass] = useState([])
+    const [charDesc, setCharDesc] = useState([])
 
 
    useEffect(() => {
@@ -12,9 +13,10 @@ function ClassContainer(){
            }
            )
            let res = await req.json()  
-           console.log(res)
            setCharClass(res.results)
-       })()
+           console.log(res.results)
+           
+        })()
    }, []) 
    
 

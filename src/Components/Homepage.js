@@ -1,5 +1,4 @@
 import React from 'react'
-import Class from './Class'
 import ClassContainer from './ClassContainer'
 import Background from './Background'
 import Spells from './Spells'
@@ -13,7 +12,7 @@ function Homepage() {
             <h1>Header</h1>
         </div> 
         <div>
-            <ClassContainer />
+            <button>Classes</button> 
         </div>
         <div>
             <Background />
