@@ -15,12 +15,19 @@ body {
 .character-window img {
   height: 250px;
   width: 250px;
+  border: 2px solid black;
 }
 
 .char-window-button{ 
   position: relative;
   margin-bottom: 20px;
   margin-left: 80%;
+  border: 4px solid #0082FF;
+  border-radius: 15px;
+  background-image: linear-gradient(to bottom right, #565656, #888888, #CFCFCF);
+  color: #00FFFD;
+  font-size: 1.15rem;
+  font-weight: 550;
 }
 
 .navbar{
