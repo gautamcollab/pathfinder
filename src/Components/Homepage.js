@@ -44,7 +44,6 @@ function Homepage() {
         <div>Light Mode/Dark Mode</div> 
         </>
     )
-
 }
 
 

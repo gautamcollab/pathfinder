@@ -18,6 +18,12 @@ body {
 }
 
 .char-window-button{ 
+  position: relative;
   margin-bottom: 20px;
   margin-left: 80%;
+}
+
+.navbar{
+  position: fixed;
+  top: 0;
 }
