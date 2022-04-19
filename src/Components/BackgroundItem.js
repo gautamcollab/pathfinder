@@ -11,9 +11,8 @@ function BackgroundItem({ element, setStoryPost }) {
         })
     }
     return(
-        <div className="bg-item" onClick={handleClickStory}>
-            <h1>{name}</h1>
-            <p>{value}</p>
+        <div className="body-content">
+            {element.data.description.value}
         </div>
     )
 }
