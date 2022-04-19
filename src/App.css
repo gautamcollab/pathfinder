@@ -24,8 +24,8 @@ body {
   margin-left: 80%;
   border: 4px solid #0082FF;
   border-radius: 15px;
-  background-image: linear-gradient(to bottom right, #565656, #888888, #CFCFCF);
-  color: #00FFFD;
+  background-image: linear-gradient(to bottom right, #525252, #B3B3B3, #E5E5E5);
+  color: #00F9FF;
   font-size: 1.15rem;
   font-weight: 550;
 }

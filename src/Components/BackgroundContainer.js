@@ -19,7 +19,7 @@ function BackgroundContainer({storyPost, setStoryPost}) {
 
     return (
         <div>
-            <div className="background-title">BackgroundContainer</div>
+            <div className="background-title">Choose Your Story</div>
             {background.map(element => {
                 return <BackgroundItem key={element.id} element={element} storyPost={storyPost} setStoryPost={setStoryPost} />
             })}

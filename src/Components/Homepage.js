@@ -9,16 +9,11 @@ import Equipment from './Equipment'
 
 function Homepage() {
     const [isCharVisible, setCharVisible] = useState(false)
-    const [isBgVisible, setBgVisible] = useState(false)
     const [storyPost, setStoryPost] = useState('')
 
     const handleCharWindClick = () => {
         setCharVisible(!isCharVisible)
     }
-    const handleBgStoryClick = () => {
-        setBgVisible(!isBgVisible)
-    }
-
     return (
         <>
         <div>
@@ -32,8 +27,8 @@ function Homepage() {
             <button>Classes</button> 
         </div>
         <div>
-            <button onClick={handleBgStoryClick}>Background Stories</button>
-            {isBgVisible ? <BackgroundContainer storyPost={storyPost} setStoryPost={setStoryPost}/> : null}
+            <h1>Background Stories</h1>
+            <BackgroundContainer storyPost={storyPost} setStoryPost={setStoryPost}/>
         </div>
         <div>
             <Equipment />
