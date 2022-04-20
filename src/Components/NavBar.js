@@ -1,14 +1,17 @@
 import { Link } from 'react-router-dom'
 
-function NavBar({ handleBgStoryClick }){
+
+function NavBar({windowState, handleWindowClick}) {
     
     return (
         <nav className="navbar"> 
-            <Link to='/stories'>
-              {/* <button className="navbutton" onClick={handleBgStoryClick}>Stories</button> */}
-              Background
+            <Link to='/'>
+            <button className="navbutton">Home</button>
             </Link>
-            <Link to='/classes'>
+            <Link to='/stories'>
+              <button className="navbutton">Stories</button>
+            </Link>
+            <Link to='/class'>
               <button className="navbutton">Classes</button> 
             </Link>
             <Link to='/equipment'>
@@ -17,9 +20,8 @@ function NavBar({ handleBgStoryClick }){
             <Link to='/spells'>
               <button className="navbutton">Spells</button>
             </Link>
-            <Link to='/character'>
-              {/* <button className="navbutton" onClick={handleCharWindClick}>{isCharVisible ? 'Hide Character' : 'Show Character'}</button> */}
-            </Link>
+            <button onClick={handleWindowClick}>{windowState ? 'Hide Character' : 'Show Character'}</button>
+           
         </nav>
     )
 

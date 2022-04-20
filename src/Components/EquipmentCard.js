@@ -20,7 +20,7 @@ function EquipmentCard(){
     return (
         equipments.map((element) => {
             return(
-                <Equipment equip = {element}/>
+                <Equipment key={element.name} equip = {element}/>
             )
         })
     )

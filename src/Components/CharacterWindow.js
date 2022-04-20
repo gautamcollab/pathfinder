@@ -1,6 +1,12 @@
 import defaultCharacter from './fallout-boy.png'
+import {useState} from 'react'
 
-function CharacterWindow() {
+function CharacterWindow({ }) {
+    const [classes, setClasses] = useState('')
+
+    const handleClassClick = () => {
+        setClasses()
+    }
     return (
         <div className="character-window">
             <h1>Your Character</h1>

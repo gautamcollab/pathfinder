@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import Spells from "./Spells";
 
 function SpellCard() {
@@ -11,13 +11,13 @@ function SpellCard() {
             })
             let res = await req.json()
             console.log(res.results)
-            // setSpell(res.results)
+            setSpell(res.results)
         })()
     }, [])
      return (
         spells.map((element) => {
             return(
-                <Spells spell={element}/> 
+                <Spells key={element.name} spell={element}/> 
             )
         })
      )
