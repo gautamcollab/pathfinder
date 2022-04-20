@@ -1,58 +1,43 @@
-import { Switch, Route } from 'react-router-dom'
-import { useState } from 'react'
-import './App.css';
-import RenderPage from './Components/RenderPage'
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 import NavBar from './Components/NavBar';
-import Spells from './Components/Spells';
-import EquipmentCard from './Components/EquipmentCard';
-import CharacterWindow from './Components/CharacterWindow'
-import BackgroundContainer from './Components/BackgroundContainer'
-import ClassContainer from './Components/ClassContainer';
+import BackgroundContainer from './Components/BackgroundContainer'; 
+import ClassContainer from "./Components/ClassContainer";
+import EquipmentCard from "./Components/EquipmentCard"
+import SpellCard from "./Components/SpellCard"
+import "./App.css"
 
-function App() {
-    const [isCharVisible, setCharVisible] = useState(false)
-    const [isBgVisible, setBgVisible] = useState(false)
-    const [storyPost, setStoryPost] = useState('')
-
-    const handleCharWindClick = () => {
-        setCharVisible(!isCharVisible)
-    }
-    const handleBgStoryClick = () => {
-        setBgVisible(!isBgVisible)
-    }
-
-    return (
+export default function App() {
+  return (
+    <Router>
+        <NavBar />
+   
         <Switch>
-            <div>
-              <NavBar 
-                handleCharWindClick={handleCharWindClick} 
-                handleBgStoryClick={handleBgStoryClick}
-                isCharVisible={isCharVisible} 
-              />
-              <RenderPage 
-                isBgVisible={isBgVisible}
-                isCharVisible={isCharVisible} 
-                storyPost={storyPost}
-                setStoryPost={setStoryPost}
-              />
-            </div>
-            <Route path="/character">
-                <CharacterWindow />
-            </Route>
-            <Route path="/stories">
-                <BackgroundContainer />
-            </Route>
-            <Route path="/classes">
-                <ClassContainer />
-            </Route>
-            <Route path="/equipment">
-                <EquipmentCard />
-            </Route>
-            <Route path="/spells">
-                <Spells />
-            </Route>
-        </Switch>
-    )
-}
+          <Route exact path="/"> 
+            WELCOME
+          </Route>
+          <Route exact path="/stories">
+            <BackgroundContainer />
+          </Route>
+          <Route exact path="/class"> 
+            <ClassContainer /> 
+          </Route>
+          <Route exact path="/equipment">
+            <EquipmentCard />
 
-export default App;
+          </Route>
+          <Route exact path="/spells">
+            <SpellCard />
+          </Route>
+          <Route exact path="/">
+           
+          </Route>
+        </Switch>
+      
+    </Router>
+  );
+}

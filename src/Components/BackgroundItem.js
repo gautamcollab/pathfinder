@@ -1,19 +1,11 @@
-function BackgroundItem({ element, setStoryPost }) {
-    const { name, data: { description: { value } } } = element
-    const handleClickStory = () => {
-        setStoryPost(() => {
-            return (
-                <div>
-                    <strong>{name} : </strong>
-                    {value}
-                </div>
-            )
-        })
-    }
+function BackgroundItem({ story }) {
+    const { name, data: {description: {value}} } = story  
+
+
     return(
-        <div className="bg-item" onClick={handleClickStory}>
-            <strong>{name}</strong>
-            <p>{value}</p>
+        <div>
+          <strong>{ name }</strong>
+          { value }
         </div>
     )
 }

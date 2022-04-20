@@ -21,7 +21,7 @@ function ClassContainer(){
     return (
         charClass.map((element) => {
             return(
-                <Class key={element.id} className={element} />
+                <Class key={element.name} className={element} />
                 
                 )
             })
