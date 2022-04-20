@@ -8,10 +8,11 @@ function CharacterWindow({ storyPost }) {
             <p>Name: </p>
             <p>Class: </p>
             <div className="cw-bg-story">
-                <p>Background Story: {storyPost} </p>
+                Background Story: 
+                <p>{storyPost} </p>
             </div>
             <p>Spells: </p>
-            <p>Equipment: </p>
+            <p>Equiment: </p>
         </div>
     )
 }

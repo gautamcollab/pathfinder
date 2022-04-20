@@ -4,7 +4,7 @@ function BackgroundItem({ element, setStoryPost }) {
         setStoryPost(() => {
             return (
                 <div>
-                    {name} :
+                    <strong>{name} : </strong>
                     {value}
                 </div>
             )
@@ -12,7 +12,7 @@ function BackgroundItem({ element, setStoryPost }) {
     }
     return(
         <div className="bg-item" onClick={handleClickStory}>
-            <h1>{name}</h1>
+            <strong>{name}</strong>
             <p>{value}</p>
         </div>
     )

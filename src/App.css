@@ -18,7 +18,7 @@
   border: 2px solid black;
 }
 
-.char-window-button { 
+/* .char-window-button { 
   position: relative;
   margin-bottom: 20px;
   margin-left: 80%;
@@ -28,7 +28,7 @@
   color: #00F9FF;
   font-size: 1.15rem;
   font-weight: 550;
-}
+} */
 
 .navbar{
   display: flex;
