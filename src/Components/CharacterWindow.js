@@ -12,7 +12,7 @@ function CharacterWindow({ storyPost }) {
                 <p>{storyPost} </p>
             </div>
             <p>Spells: </p>
-            <p>Equiment: </p>
+            <p>Equipment: </p>
         </div>
     )
 }

@@ -29,6 +29,9 @@
   font-size: 1.15rem;
   font-weight: 550;
 } */
+.background-title {
+  text-align: center;
+}
 
 .navbar{
   display: flex;

@@ -1,23 +1,39 @@
 import { Switch, Route } from 'react-router-dom'
+import { useState } from 'react'
 import NavBar from './Components/NavBar'
 import CharacterWindow from './Components/CharacterWindow'
 import BackgroundContainer from './Components/BackgroundContainer'
 import ClassContainer from './Components/ClassContainer'
 import Equipment from './Components/Equipment'
 import Spells from './Components/Spells'
+import './App.css'
 
 function App() {
+    const [isCharVisible, setCharVisible] = useState(false)
+    const [isBgVisible, setBgVisible] = useState(false)
+    const [storyPost, setStoryPost] = useState('')
+
+    const handleCharWindClick = () => {
+        setCharVisible(!isCharVisible)
+    }
+    const handleBgStoryClick = () => {
+        setBgVisible(!isBgVisible)
+    }
 
     return (
         <Switch>
             <div>
-                <NavBar/>
+              <NavBar 
+                handleCharWindClick={handleCharWindClick} 
+                handleBgStoryClick={handleBgStoryClick}
+                isCharVisible={isCharVisible} 
+              />
             </div>
             <Route path="/character">
-                <CharacterWindow />
+            {isCharVisible ? <CharacterWindow storyPost={storyPost} /> : null}
             </Route>
             <Route path="/stories">
-                <BackgroundContainer />
+            {isBgVisible ? <BackgroundContainer setStoryPost={setStoryPost}/> : null}
             </Route>
             <Route path="/classes">
                 <ClassContainer />

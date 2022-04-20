@@ -2,7 +2,6 @@ import BackgroundItem from './BackgroundItem'
 import { useEffect, useState } from 'react'
 
 function BackgroundContainer({ setStoryPost }) {
-
     const [background, setBackground] = useState([])
 
     useEffect(() => {
@@ -21,7 +20,7 @@ function BackgroundContainer({ setStoryPost }) {
         <div>
             <div className="background-title">Choose Your Story</div>
             {background.map(element => {
-                return <BackgroundItem key={element.id} element={element} setStoryPost={setStoryPost} />
+                return <BackgroundItem key={element.name} element={element} setStoryPost={setStoryPost} />
             })}
         </div>
     )
