@@ -7,27 +7,25 @@ import Spells from './Spells';
 
 function NavBar(){
     const [isCharVisible, setCharVisible] = useState(false)
+    const [isBgVisible, setBgVisible] = useState(false)
+    const [storyPost, setStoryPost] = useState('')
 
     const handleCharWindClick = () => {
         setCharVisible(!isCharVisible)
     }
-
-    // const handleBgStoryClick = () => {
-    //     setBgVisible(!isBgVisible)
-    // }
+    const handleBgStoryClick = () => {
+        setBgVisible(!isBgVisible)
+    }
     
     return (
         <nav className="navbar"> 
             <button>Light Mode/Dark Mode</button> 
             <Link to='/stories'>
-              <button>Stories</button>
+              <button onClick={handleBgStoryClick}>Stories</button>
+              {isBgVisible ? <BackgroundContainer storyPost={storyPost} setStoryPost={setStoryPost}/> : null}
             </Link>
             <Link to='/classes'>
               <button>Classes</button> 
-            </Link>
-            <Link>
-              {/* <button onClick={handleBgStoryClick}>Background Stories</button> */}
-              {/* {isBgVisible ? <BackgroundContainer /> : null} */}
             </Link>
             <Link to='/equipment'>
               <button>Equipment </button>
@@ -37,7 +35,7 @@ function NavBar(){
             </Link>
             <Link to='/character'>
               <button className="char-window-button" onClick={handleCharWindClick}>{isCharVisible ? 'Hide Character' : 'Show Character'}</button>
-              {isCharVisible ? <CharacterWindow /> : null}
+              {isCharVisible ? <CharacterWindow storyPost={storyPost} /> : null}
             </Link>
         </nav>
     )
