@@ -1,10 +1,13 @@
 import './App.css';
-import Homepage from './Components/Homepage.js'
+import ClassContainer from './Components/ClassContainer';
+import NavBar from './Components/NavBar';
 
 function App() {
     return (
         <div>
-            <Homepage />
+            <NavBar /> 
+            <ClassContainer />
+            
         </div>
     )
 }

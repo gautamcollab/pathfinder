@@ -5,7 +5,7 @@ function Class({className}){
     const { name } = className
     return(
         <div>
-            <ul>{name}</ul>
+            <ul>{ name }</ul>
         </div>
     )
 }
