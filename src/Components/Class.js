@@ -2,7 +2,7 @@ import React from 'react'
 
 
 function Class({className}){
-    const { name } = className
+    const { name, description } = className
     return(
         <div>
             <ul>{ name }</ul>

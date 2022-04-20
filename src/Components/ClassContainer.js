@@ -14,7 +14,7 @@ function ClassContainer(){
            )
            let res = await req.json()  
            setCharClass(res.results)
-           console.log(res.results)
+           console.log(res)
         })()
    }, []) 
    
