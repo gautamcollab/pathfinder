@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from 'react'
 import {
   BrowserRouter as Router,
   Switch,
@@ -9,13 +10,19 @@ import BackgroundContainer from './Components/BackgroundContainer';
 import ClassContainer from "./Components/ClassContainer";
 import EquipmentCard from "./Components/EquipmentCard"
 import SpellCard from "./Components/SpellCard"
+import CharacterWindow from './Components/CharacterWindow'
 import "./App.css"
 
 export default function App() {
+  const [windowState, setWindowState] = useState(false)
+  const handleWindowClick = () => {
+      setWindowState(!windowState)
+  }
+
   return (
     <Router>
-        <NavBar />
-   
+        <NavBar windowState={windowState}  handleWindowClick={handleWindowClick}/>
+        {windowState ? <CharacterWindow /> : null}
         <Switch>
           <Route exact path="/"> 
             WELCOME
@@ -33,9 +40,7 @@ export default function App() {
           <Route exact path="/spells">
             <SpellCard />
           </Route>
-          <Route exact path="/">
-           
-          </Route>
+
         </Switch>
       
     </Router>

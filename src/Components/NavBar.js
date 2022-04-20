@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 
-function NavBar(){
+
+function NavBar({windowState, handleWindowClick}) {
     
     return (
         <nav className="navbar"> 
@@ -19,6 +20,7 @@ function NavBar(){
             <Link to='/spells'>
               <button className="navbutton">Spells</button>
             </Link>
+            <button onClick={handleWindowClick}>{windowState ? 'Hide Character' : 'Show Character'}</button>
            
         </nav>
     )
