@@ -1,7 +1,5 @@
 import { Switch, Route } from 'react-router-dom'
-import './App.css';
-// import Homepage from './Components/Homepage.js'
-// import NavBar from './Components/NavBar'
+import NavBar from './Components/NavBar'
 import CharacterWindow from './Components/CharacterWindow'
 import BackgroundContainer from './Components/BackgroundContainer'
 import ClassContainer from './Components/ClassContainer'
@@ -9,15 +7,19 @@ import Equipment from './Components/Equipment'
 import Spells from './Components/Spells'
 
 function App() {
+
     return (
         <Switch>
+            <div>
+                <NavBar/>
+            </div>
             <Route path="/character">
                 <CharacterWindow />
             </Route>
             <Route path="/stories">
                 <BackgroundContainer />
             </Route>
-            <Route path="/class">
+            <Route path="/classes">
                 <ClassContainer />
             </Route>
             <Route path="/equipment">
