@@ -1,9 +1,12 @@
-function Spells() {
+
+
+function Spells({spell}) {
+    const { name } = spell 
     return (
         <div>
-            <h1>Spells</h1>
+            <h1>{ name }</h1>
         </div>
     )
 }
 
-export default Spells
+export default Spells;

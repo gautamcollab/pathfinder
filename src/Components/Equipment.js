@@ -1,9 +1,13 @@
-function Equipment() {
+import React from 'react'; 
+
+function Equipment({equip}) {
+    const { name } = equip 
+
     return (
-        <div>
-            <h1>Equipment</h1>
+        <div className="container">
+            <ul> {name} </ul>
         </div>
     )
 }
 
-export default Equipment
+export default Equipment;
