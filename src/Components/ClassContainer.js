@@ -3,8 +3,6 @@ import Class from "./Class";
 
 function ClassContainer(){
     const [charClass, setCharClass] = useState([])
-    const [charDesc, setCharDesc] = useState([])
-
 
    useEffect(() => {
      (async () => {
@@ -17,13 +15,12 @@ function ClassContainer(){
         })()
    }, []) 
    
-
     return (
         charClass.map((element) => {
             return(
                 <Class key={element.name} className={element} />
-                
                 )
+                
             })
     );
 }
