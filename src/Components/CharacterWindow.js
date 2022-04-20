@@ -7,7 +7,10 @@ function CharacterWindow({ storyPost }) {
             <img src={defaultCharacter} alt="Base Character"></img>
             <p>Name: </p>
             <p>Class: </p>
-            <p>Background Story: {storyPost} </p>
+            <div className="cw-bg-story">
+                Background Story: 
+                <p>{storyPost} </p>
+            </div>
             <p>Spells: </p>
             <p>Equipment: </p>
         </div>

@@ -4,15 +4,16 @@ function BackgroundItem({ element, setStoryPost }) {
         setStoryPost(() => {
             return (
                 <div>
-                    {name} :
+                    <strong>{name} : </strong>
                     {value}
                 </div>
             )
         })
     }
     return(
-        <div className="body-content">
-            {element.data.description.value}
+        <div className="bg-item" onClick={handleClickStory}>
+            <strong>{name}</strong>
+            <p>{value}</p>
         </div>
     )
 }
