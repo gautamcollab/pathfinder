@@ -1,6 +1,6 @@
 
 
-function Spells({spell}) {
+function Spells({ spell }) {
     const { name } = spell 
     return (
         <div>
