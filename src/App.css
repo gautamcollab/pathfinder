@@ -1,7 +1,4 @@
-/* body {
-  display: grid;
-}
- */
+
 .App {
   text-align: center;
 }
@@ -10,6 +7,9 @@
   text-align: center;
   border: 5px solid black;
   margin-left: 65%;
+  margin-top: 4%;
+  margin-right: 1%;
+  padding-bottom: 50px;
 }
 
 .character-window img {
@@ -18,17 +18,6 @@
   border: 2px solid black;
 }
 
-/* .char-window-button { 
-  position: relative;
-  margin-bottom: 20px;
-  margin-left: 80%;
-  border: 4px solid #0082FF;
-  border-radius: 15px;
-  background-image: linear-gradient(to bottom right, #525252, #B3B3B3, #E5E5E5);
-  color: #00F9FF;
-  font-size: 1.15rem;
-  font-weight: 550;
-} */
 .background-title {
   text-align: center;
 }
@@ -63,6 +52,5 @@
   border: 1px solid black;
   flex: auto;
   width: 10%;
-
 }
 

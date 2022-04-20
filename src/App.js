@@ -1,3 +1,4 @@
+
 import { Switch, Route } from 'react-router-dom'
 import { useState } from 'react'
 import './App.css';
@@ -10,37 +11,36 @@ import BackgroundContainer from './Components/BackgroundContainer'
 import ClassContainer from './Components/ClassContainer';
 
 function App() {
-    const [isCharVisible, setCharVisible] = useState(false)
-    const [isBgVisible, setBgVisible] = useState(false)
-    const [storyPost, setStoryPost] = useState('')
+    // const [isCharVisible, setCharVisible] = useState(false)
+    // const [isBgVisible, setBgVisible] = useState(false)
+    // const [storyPost, setStoryPost] = useState('')
 
-    const handleCharWindClick = () => {
-        setCharVisible(!isCharVisible)
-    }
-    const handleBgStoryClick = () => {
-        setBgVisible(!isBgVisible)
-    }
+    // const handleCharWindClick = () => {
+    //     setCharVisible(!isCharVisible)
+    // }
+    // const handleBgStoryClick = () => {
+    //     setBgVisible(!isBgVisible)
+    // }
 
     return (
         <Switch>
-            <div>
               <NavBar 
-                handleCharWindClick={handleCharWindClick} 
-                handleBgStoryClick={handleBgStoryClick}
-                isCharVisible={isCharVisible} 
+                // handleCharWindClick={handleCharWindClick} 
+                // handleBgStoryClick={handleBgStoryClick}
+                // isCharVisible={isCharVisible} 
               />
-              <RenderPage 
-                isBgVisible={isBgVisible}
-                isCharVisible={isCharVisible} 
-                storyPost={storyPost}
-                setStoryPost={setStoryPost}
-              />
-            </div>
+              {/* <RenderPage 
+                // isBgVisible={isBgVisible}
+                // isCharVisible={isCharVisible} 
+                // storyPost={storyPost}
+                // setStoryPost={setStoryPost}
+              /> */}
             <Route path="/character">
-                <CharacterWindow />
+                {/* <CharacterWindow /> */}
             </Route>
             <Route path="/stories">
-                <BackgroundContainer />
+                {/* <BackgroundContainer /> */}
+                <h1>Background</h1>
             </Route>
             <Route path="/classes">
                 <ClassContainer />

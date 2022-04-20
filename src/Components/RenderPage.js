@@ -5,11 +5,11 @@ import CharacterWindow from './CharacterWindow'
 import BackgroundContainer from './BackgroundContainer'
 import ClassContainer from './ClassContainer';
 
-function RenderPage({ isBgVisible, isCharVisible, storyPost, setStoryPost }) {
+function RenderPage({ isBgVisible }) {
     return (
         <div>
-            {isCharVisible ? <CharacterWindow storyPost={storyPost} /> : null}
-            {isBgVisible ? <BackgroundContainer isBgVisible={isBgVisible} setStoryPost={setStoryPost}/> : null}
+            {/* {isCharVisible ? <CharacterWindow storyPost={storyPost} /> : null} */}
+            {/* {isBgVisible ? <BackgroundContainer isBgVisible={isBgVisible}/> : null} */}
         </div>
     )
 }

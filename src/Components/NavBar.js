@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom'
 
-function NavBar({isCharVisible, handleBgStoryClick, handleCharWindClick}){
+function NavBar({ handleBgStoryClick }){
     
     return (
         <nav className="navbar"> 
-            <button className="navbutton">Light Mode/Dark Mode</button> 
             <Link to='/stories'>
-              <button className="navbutton" onClick={handleBgStoryClick}>Stories</button>
+              {/* <button className="navbutton" onClick={handleBgStoryClick}>Stories</button> */}
+              Background
             </Link>
             <Link to='/classes'>
               <button className="navbutton">Classes</button> 
@@ -18,7 +18,7 @@ function NavBar({isCharVisible, handleBgStoryClick, handleCharWindClick}){
               <button className="navbutton">Spells</button>
             </Link>
             <Link to='/character'>
-              <button className="navbutton" onClick={handleCharWindClick}>{isCharVisible ? 'Hide Character' : 'Show Character'}</button>
+              {/* <button className="navbutton" onClick={handleCharWindClick}>{isCharVisible ? 'Hide Character' : 'Show Character'}</button> */}
             </Link>
         </nav>
     )
