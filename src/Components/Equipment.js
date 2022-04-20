@@ -1,11 +1,11 @@
 import React from 'react'; 
 
-function Equipment() {
-    // const { name } = equip 
+function Equipment({equip}) {
+    const { name } = equip 
 
     return (
         <div className="container">
-            <ul>Test </ul>
+            <ul> {name} </ul>
         </div>
     )
 }
