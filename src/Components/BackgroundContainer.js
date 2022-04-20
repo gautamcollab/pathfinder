@@ -1,7 +1,7 @@
 import BackgroundItem from './BackgroundItem'
 import { useEffect, useState } from 'react'
 
-function BackgroundContainer() {
+function BackgroundContainer({handleStoryValue}) {
     const [stories, setStory] = useState([])
 
     useEffect(() => {
@@ -17,7 +17,7 @@ function BackgroundContainer() {
     return (
       stories.map((element) => {
           return (
-              <BackgroundItem key={element.name} story={element}/>
+              <BackgroundItem key={element.name} story={element} handleStoryValue={handleStoryValue} />
           )
       })
     )

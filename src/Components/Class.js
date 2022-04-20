@@ -1,12 +1,12 @@
 import React from 'react' 
 
-function Class({className}){
+function Class({handleClassValue, className}){
     const { name } = className
     return(
-        <div className="class-container">
-            <ul className="char-class">{ name }</ul>
+        <div onClick={handleClassValue}>
+          <ul className="char-class">{ name }</ul>
         </div>
-              
+        
     )
 }
 

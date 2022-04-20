@@ -1,10 +1,10 @@
 import React from 'react'; 
 
-function Equipment({equip}) {
+function Equipment({equip, handleEquipValue}) {
     const { name } = equip 
 
     return (
-        <div className="container">
+        <div onClick={handleEquipValue} className="container">
             <ul> {name} </ul>
         </div>
     )
