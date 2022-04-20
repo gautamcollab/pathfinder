@@ -4,7 +4,7 @@ function Spells({spell}) {
     const { name } = spell 
     return (
         <div>
-            <h1>{spell}</h1>
+            <h1>{ name }</h1>
         </div>
     )
 }

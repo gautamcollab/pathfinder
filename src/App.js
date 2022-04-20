@@ -8,7 +8,9 @@ function App() {
         <div>
             <NavBar /> 
             {/* <Spells /> */}
-            {/* <ClassContainer /> */}
+            <div className="char-container">
+              <ClassContainer />
+            </div>
             
         </div>
     )

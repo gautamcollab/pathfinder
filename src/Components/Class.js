@@ -2,11 +2,10 @@ import React from 'react'
 
 
 function Class({className}){
-    const { name, description } = className
+    const { name } = className
     return(
-        <div>
-            <ul>{ name }</ul>
-        </div>
+            <ul className="char-class">{ name }</ul>
+        
     )
 }
 

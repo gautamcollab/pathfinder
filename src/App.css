@@ -29,7 +29,6 @@ body {
   width: 100%;
   top: 0;
   background-color: #708090;
-
 }
 
 .navbutton{
@@ -40,6 +39,19 @@ body {
   padding: 7px;
 }
 
-.container{
-  margin-top: 50%;
+.navbutton:hover{
+  background-color: #FFFAFF;
+}
+
+.char-container{
+  display: flex;
+  margin-top: 5%;
+  flex-wrap: wrap;
+}
+
+.char-class{
+  border: 1px solid black;
+  flex: auto;
+  width: 10%;
+
 }
