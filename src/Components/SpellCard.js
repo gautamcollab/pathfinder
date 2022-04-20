@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import Spells from "./Spells";
 
-function SpellCard() {
+function SpellCard({handleSpellValue}) {
     const [spells, setSpell] = useState([])
 
     useEffect(() => {
@@ -17,7 +17,7 @@ function SpellCard() {
      return (
         spells.map((element) => {
             return(
-                <Spells key={element.name} spell={element}/> 
+                <Spells handleSpellValue={handleSpellValue} key={element.name} spell={element}/> 
             )
         })
      )

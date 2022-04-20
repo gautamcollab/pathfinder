@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import Class from "./Class";
 
-function ClassContainer(){
+function ClassContainer({handleClassValue}){
     const [charClass, setCharClass] = useState([])
     const [charDesc, setCharDesc] = useState([])
 
@@ -21,7 +21,7 @@ function ClassContainer(){
     return (
         charClass.map((element) => {
             return(
-                <Class key={element.name} className={element} />
+                <Class handleClassValue={handleClassValue} key={element.name} className={element} />
                 
                 )
             })

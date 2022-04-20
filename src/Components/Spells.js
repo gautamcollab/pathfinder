@@ -1,9 +1,9 @@
 
 
-function Spells({spell}) {
+function Spells({ handleSpellValue, spell }) {
     const { name } = spell 
     return (
-        <div>
+        <div onClick={handleSpellValue}>
             <h1>{ name }</h1>
         </div>
     )

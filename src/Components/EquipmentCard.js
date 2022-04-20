@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import Equipment from './Equipment';
 
-function EquipmentCard(){
+function EquipmentCard({handleEquipValue}){
     const [equipments, setEquipment] = useState([])
 
     useEffect(() => {
@@ -20,7 +20,7 @@ function EquipmentCard(){
     return (
         equipments.map((element) => {
             return(
-                <Equipment key={element.name} equip = {element}/>
+                <Equipment handleEquipValue={handleEquipValue} key={element.name} equip = {element}/>
             )
         })
     )

@@ -1,9 +1,8 @@
-function BackgroundItem({ story }) {
+function BackgroundItem({ story, handleStoryValue }) {
     const { name, data: {description: {value}} } = story  
 
-
     return(
-        <div>
+        <div onClick={handleStoryValue}>
           <strong>{ name }</strong>
           { value }
         </div>
