@@ -1,4 +1,4 @@
-import defaultCharacter from './characterfigurecropped.png'
+import defaultCharacter from '../Images/characterfigurecropped.png'
 import { useState } from 'react'
 import NameForm from './NameForm'
 
