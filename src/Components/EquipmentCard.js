@@ -18,12 +18,14 @@ function EquipmentCard({handleEquipValue}){
     }, [])
 
     return (
-        equipments.map((element) => {
+        <div className="equip-container"> 
+        {equipments.map((element) => {
             return(
                 <Equipment handleEquipValue={handleEquipValue} key={element.name} equip = {element}/>
             )
-        })
-    )
+        })}
+      </div>
+        )
 }
 
 

@@ -64,7 +64,7 @@ body {
   width: 200px;
   border: 1px solid black;
   border-radius: 10px;
-  justify-content: center;
+  text-align: center;
   flex: auto;
   background: linear-gradient(135deg, teal, silver);
 }
@@ -72,5 +72,24 @@ body {
 .char-class:hover{
   transform: scale(1.1);
   background: linear-gradient(135deg, teal, gold);
+}
+
+.equip-container{
+  margin: 4%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+}
+
+.equip{
+  flex: auto;
+  border: 1px solid black;
+  text-align: center;
+  background: linear-gradient(135deg, #DDA0DD, #f0fff0 )
+}
+
+.equip:hover{
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #DDA0DD, #FA8072)
 }
 

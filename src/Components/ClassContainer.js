@@ -21,8 +21,7 @@ function ClassContainer({handleClassValue}){
             return(
                 <Class handleClassValue={handleClassValue} key={element.name} className={element} />
             )
-        })
-    }
+        })}
       </div>
     );
 }
