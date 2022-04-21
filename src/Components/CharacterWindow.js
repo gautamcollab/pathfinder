@@ -1,4 +1,4 @@
-import defaultCharacter from './fallout-boy.png'
+import defaultCharacter from './characterfigurecropped.png'
 import { useState } from 'react'
 import NameForm from './NameForm'
 

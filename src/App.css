@@ -53,8 +53,8 @@ body {
 .character-window img {
   height: 250px;
   width: 250px;
-  border: 10px double #E8E8E8;
-  background: white;
+  border: 10px double #F7CE00;
+  background-image: url('./Components/texture.jpeg');
 }
 
 .form {
