@@ -1,11 +1,31 @@
-
+import {useState} from 'react' 
 
 function Spells({ handleSpellValue, spell }) {
-    const { name } = spell 
+    const { name, data: {description: {value}} } = spell 
+    const [desc, setDesc] = useState(false)
+
+    const spellDesc = () => {
+        console.log(desc)
+        // Array.from(e.target.children).forEach((div) => {
+        //     div.setAttribute('class', 'spell-info-visible togglable')   
+        // })
+        setDesc(!desc)
+    }
+
+
     return (
-        <div onClick={handleSpellValue}>
-            <h1>{ name }</h1>
-        </div>
+            <div className="spell" onMouseEnter={spellDesc} onMouseLeave={spellDesc}>
+                <div onClick={handleSpellValue} 
+                
+                
+                >{ name }</div>
+                <div className="spell-desc"
+                //stretches out container, needs css styling
+                > 
+                   {desc ? value : null } 
+                </div>
+                <div className="spell-info-hidden togglable">All info here</div>
+            </div>
     )
 }
 

@@ -15,11 +15,13 @@ function SpellCard({handleSpellValue}) {
         })()
     }, [])
      return (
-        spells.map((element) => {
+         <div className="spell-container">
+        {spells.map((element) => {
             return(
                 <Spells handleSpellValue={handleSpellValue} key={element.name} spell={element}/> 
             )
-        })
+        })}
+        </div>
      )
 
 }
