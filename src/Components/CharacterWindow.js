@@ -6,9 +6,13 @@ function CharacterWindow({storyValue, classValue, spellValue, equipValue}) {
     const [name, setName] = useState('')
     return (
         <div className="character-window">
-            <h1>Your Character</h1>
+            <div className="cw-title">
+                Your Character
+            </div>
             <img src={defaultCharacter} alt="Base Character"></img>
-            <p>Name: { name }</p>
+            <div className="cw-text">
+                Name: { name }
+            </div >
             <div className="cw-text">
                 Class: {classValue}
             </div>
@@ -22,7 +26,9 @@ function CharacterWindow({storyValue, classValue, spellValue, equipValue}) {
                 Background Story: 
                 <p>{storyValue}</p>
             </div>
-            <NameForm setName={setName} />
+            <div className="form">
+                <NameForm setName={setName} />
+            </div>
         </div>
     )
 }
