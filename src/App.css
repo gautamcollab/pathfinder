@@ -7,7 +7,6 @@ body {
 }
 
 .character-window {
-  /* background: linear-gradient(to bottom right, #814d00, #ffe205e7, white, #ffe205e7, #814d00); */
   background-image: url('./Images/texture.jpeg');
   text-align: center;
   font-family: luminari;
@@ -23,38 +22,77 @@ body {
   overflow: auto;
 }
 
+/*Character Window Text Fields */
 .cw-title {
   background-image: url('./Images/gemtexture.jpeg');
   color: white;
-  text-shadow:
-  0.07em 0 black,
-  0 0.07em black,
-  -0.07em 0 black,
-  0 -0.07em black;
+  text-shadow: 0.15em 0 black;
   font-size: 25px;
   font-weight: 900;
   border: 5px outset #ffe999;
-  margin-top: 3%;
-  margin-bottom: 3%;
-  margin-left: 10%;
-  max-width: 80%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 14%;
+  max-width: 70%;
+  min-height: 5.5%;
 }
-
-.cw-text {
-  background-image: url('./Images/rubytexture.jpeg');
+.cw-name {
+  background-image: url('./Images/namebg.jpeg');
   color: white;
+  text-shadow: 0.15em 0 black;
+  font-size: 18px;
   font-weight: 800;
   border: 5px outset #ffe999;
   max-width: 50%;
-  min-height: 6%;
+  min-height: 4%;
   margin-left: 24%;
   margin-bottom: 15px;
   margin-top: 15px;
 }
-
+.cw-class {
+  background-image: url('./Images/classbg.jpeg');
+  color: white;
+  text-shadow: 0.15em 0 black;
+  font-size: 18px;
+  font-weight: 800;
+  border: 5px outset #ffe999;
+  max-width: 50%;
+  min-height: 4%;
+  margin-left: 24%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.cw-equip {
+  background-image: url('./Images/equipbg.jpeg');
+  color: white;
+  text-shadow: 0.15em 0 black;
+  font-size: 18px;
+  font-weight: 800;
+  border: 5px outset #ffe999;
+  max-width: 50%;
+  min-height: 4%;
+  margin-left: 24%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.cw-spell {
+  background-image: url('./Images/spellsbg.jpeg');
+  color: white;
+  text-shadow: 0.15em 0 black;
+  font-size: 18px;
+  font-weight: 800;
+  border: 5px outset #ffe999;
+  max-width: 50%;
+  min-height: 4%;
+  margin-left: 24%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
 .cw-bg {
   background-image: url('./Images/rubytexture.jpeg');
   color: white;
+  text-shadow: 0.15em 0 black;
+  font-size: 18px;
   font-weight: 800;
   border: 5px outset #ffe999;
   margin-left: 10%;
@@ -63,12 +101,12 @@ body {
   margin-top: 15px;
   min-height: 10%;
 }
+/*End Character Window Text Fields */
 
 .character-window img {
   height: 300px;
   width: 300px;
   border: 10px double #F7CE00;
-  /* background-image: url('./Components/texture.jpeg'); */
   background: linear-gradient(to bottom right, #814d00, #ffe205e7, white, #ffe205e7, #814d00);
 }
 
