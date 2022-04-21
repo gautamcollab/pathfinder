@@ -16,12 +16,19 @@ function ClassContainer({handleClassValue}){
    }, []) 
    
     return (
+        <div className="class-section"> 
+            <div className="class-desc"> 
+            Hello World!
+    
+
         <div className="class-container">
         {charClass.map((element) => {
             return(
                 <Class handleClassValue={handleClassValue} key={element.name} className={element} />
             )
         })}
+                    </div>
+                </div>
       </div>
     );
 }

@@ -153,9 +153,15 @@ body {
   cursor: pointer;
 }
 
+.class-section{
+  display: grid;
+  grid-template: 20% / 80%
+
+}
+
 .class-container{
   margin-top: 4%;
-  display: flex;
+  margin: 1%;
   padding: 10px;
   gap: 11px;
   flex-wrap: wrap;
@@ -164,18 +170,17 @@ body {
 }
 
 .char-class{
-  height: 100px;
+  height: 35px;
   width: 200px;
   border: 1px solid black;
-  border-radius: 10px;
   text-align: center;
   flex: auto;
-  background: linear-gradient(135deg, teal, silver);
+  background: linear-gradient(185deg, teal, silver);
 }
 
 .char-class:hover{
   transform: scale(1.1);
-  background: linear-gradient(135deg, teal, gold);
+  background: linear-gradient(185deg, teal, gold);
 }
 
 .equip-container{
