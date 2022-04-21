@@ -26,7 +26,7 @@ function CharacterWindow({storyValue, classValue, spellValue, equipValue}) {
                 Background Story: 
                 <p>{storyValue}</p>
             </div>
-            <div className="form">
+            <div>
                 <NameForm setName={setName} />
             </div>
         </div>

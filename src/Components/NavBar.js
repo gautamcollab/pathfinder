@@ -20,7 +20,7 @@ function NavBar({windowState, handleWindowClick}) {
             <Link to='/spells'>
               <button className="navbutton">Spells</button>
             </Link>
-            <button onClick={handleWindowClick}>{windowState ? 'Hide Character' : 'Show Character'}</button>
+            <button className="char-button" onClick={handleWindowClick}>{windowState ? 'Hide Character' : 'Show Character'}</button>
            
         </nav>
     )

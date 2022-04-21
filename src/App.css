@@ -47,7 +47,7 @@ body {
   min-height: 4%;
   margin-left: 24%;
   margin-bottom: 15px;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 .cw-class {
   background-image: url('./Images/classbg.jpeg');
@@ -110,8 +110,23 @@ body {
   background: linear-gradient(to bottom right, #814d00, #ffe205e7, white, #ffe205e7, #814d00);
 }
 
-.form {
+.form-input {
   font-family: luminari;
+  font-size: 18px;
+  margin-right: 18px;
+  border: 5px double #F7CE00;
+  outline: none;
+}
+
+.form-button {
+  background-image: url('./Images/goldtexture.jpg');
+  color: white;
+  font-family: luminari;
+  text-shadow: 0.15em 0 black;
+  font-size: 19px;
+  font-weight: 900;
+  border: 5px outset #ffe100fc;
+  cursor: pointer;
 }
 
 .navbar{
