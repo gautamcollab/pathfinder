@@ -4,7 +4,7 @@ function Class({handleClassValue, className}){
     const { name } = className
     return(
         <div onClick={handleClassValue}>
-          <ul className="char-class">{ name }</ul>
+          <div className="char-class">{ name }</div>
         </div>
         
     )
