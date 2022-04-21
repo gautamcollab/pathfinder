@@ -22,7 +22,7 @@ function CharacterWindow({storyValue, classValue, spellValue, equipValue}) {
             <div className="cw-text">
                 Equipment: {equipValue}
             </div>
-            <div className="cw-text">
+            <div className="cw-bg">
                 Background Story: 
                 <p>{storyValue}</p>
             </div>
