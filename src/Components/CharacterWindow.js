@@ -1,4 +1,4 @@
-import defaultCharacter from '../Images/characterfigurecropped.png'
+// import defaultCharacter from '../Images/characterfigurecropped.png'
 import { useState } from 'react'
 import NameForm from './NameForm'
 
@@ -9,7 +9,7 @@ function CharacterWindow({storyValue, classValue, spellValue, equipValue}) {
             <div className="cw-title">
                 Your Character
             </div>
-            <img src={defaultCharacter} alt="Base Character"></img>
+            {/* <img src={defaultCharacter} alt="Base Character"></img> */}
             <div className="cw-name">
                 Name: { name }
             </div >
