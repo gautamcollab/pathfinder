@@ -6,7 +6,7 @@ function NameForm({ setName }) {
         setForm(e.target.value)
     }
     return (
-        <div>
+        <div className="form">
             <input value={form} onChange={handleOnChange} type="text" placeholder="What is your name?"></input>
             <button onClick={() => {setName(form)}}>Submit</button>
         </div>

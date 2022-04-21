@@ -9,16 +9,16 @@ function CharacterWindow({storyValue, classValue, spellValue, equipValue}) {
             <h1>Your Character</h1>
             <img src={defaultCharacter} alt="Base Character"></img>
             <p>Name: { name }</p>
-            <div className="cw-class">
+            <div className="cw-text">
                 Class: {classValue}
             </div>
-            <div className="cw-spell">
+            <div className="cw-text">
                 Spells: {spellValue}              
             </div>
-            <div className="cw-equip">
+            <div className="cw-text">
                 Equipment: {equipValue}
             </div>
-            <div className="cw-story">
+            <div className="cw-text">
                 Background Story: 
                 <p>{storyValue}</p>
             </div>
