@@ -6,7 +6,10 @@ function NavBar({windowState, handleWindowClick}) {
     return (
         <nav className="navbar"> 
             <Link to='/'>
-            <button className="navbutton">Home</button>
+              <button className="navbutton">Home</button>
+            </Link>
+            <Link to='/appearance'>
+              <button className="navbutton">Appearance</button>
             </Link>
             <Link to='/stories'>
               <button className="navbutton">Stories</button>

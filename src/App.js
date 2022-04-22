@@ -11,6 +11,7 @@ import ClassContainer from "./Components/ClassContainer";
 import EquipmentCard from "./Components/EquipmentCard"
 import SpellCard from "./Components/SpellCard"
 import CharacterWindow from './Components/CharacterWindow'
+import Appearance from './Components/Appearance'
 import "./App.css"
 
 export default function App() {
@@ -19,6 +20,12 @@ export default function App() {
         const [classValue, setClassValue] = useState('')
         const [spellValue, setSpellValue] = useState('')
         const [equipValue, setEquipValue] = useState('')
+        const [isCharOneVisible, setCharOneVisible] = useState(false)
+        const [isCharTwoVisible, setCharTwoVisible] = useState(false)
+        const [isCharThreeVisible, setCharThreeVisible] = useState(false)
+        const [isCharFourVisible, setCharFourVisible] = useState(false)
+        const [isCharFiveVisible, setCharFiveVisible] = useState(false)
+
         const handleWindowClick = () => {
             setWindowState(!windowState)
         }
@@ -34,6 +41,21 @@ export default function App() {
         const handleEquipValue = (e) => {
             setEquipValue(e.target.textContent)
         }
+        const handleCharOneVisible = () => {
+            setCharOneVisible(!isCharOneVisible)
+        }
+        const handleCharTwoVisible = () => {
+            setCharTwoVisible(!isCharTwoVisible)
+        }
+        const handleCharThreeVisible = () => {
+            setCharThreeVisible(!isCharThreeVisible)
+        }
+        const handleCharFourVisible = () => {
+            setCharFourVisible(!isCharFourVisible)
+        }
+        const handleCharFiveVisible = () => {
+            setCharFiveVisible(!isCharFiveVisible)
+        }
 
 
     return (
@@ -44,11 +66,30 @@ export default function App() {
             classValue={classValue}
             spellValue={spellValue}
             equipValue={equipValue}
+            isCharOneVisible={isCharOneVisible}
+            handleCharOneVisible={handleCharOneVisible}
+            isCharTwoVisible={isCharTwoVisible}
+            handleCharTwoVisible={handleCharTwoVisible}
+            isCharThreeVisible={isCharThreeVisible}
+            handleCharThreeVisible={handleCharThreeVisible}
+            isCharFourVisible={isCharFourVisible}
+            handleCharFourVisible={handleCharFourVisible}
+            isCharFiveVisible={isCharFiveVisible}
+            handleCharFiveVisible={handleCharFiveVisible}
             /> 
         : null}
         <Switch>
           <Route exact path="/"> 
             WELCOME
+          </Route>
+          <Route exact path="/appearance">
+            <Appearance 
+                handleCharOneVisible={handleCharOneVisible}
+                handleCharTwoVisible={handleCharTwoVisible}
+                handleCharThreeVisible={handleCharThreeVisible}
+                handleCharFourVisible={handleCharFourVisible}
+                handleCharFiveVisible={handleCharFiveVisible}
+            />
           </Route>
           <Route exact path="/stories">
             <BackgroundContainer handleStoryValue={handleStoryValue} />

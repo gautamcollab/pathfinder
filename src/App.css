@@ -1,6 +1,3 @@
-body {
-  display: grid;
-}
 
 .App {
   text-align: center;
@@ -25,8 +22,8 @@ body {
 /*Character Window Text Fields */
 .cw-title {
   background-image: url('./Images/gemtexture.jpeg');
-  color: white;
-  text-shadow: 0.15em 0 black;
+  color: rgb(239, 239, 239);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   font-size: 25px;
   font-weight: 900;
   border: 5px outset #ffe999;
@@ -38,8 +35,8 @@ body {
 }
 .cw-name {
   background-image: url('./Images/namebg.jpeg');
-  color: white;
-  text-shadow: 0.15em 0 black;
+  color: rgb(228, 228, 228);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   font-size: 18px;
   font-weight: 800;
   border: 5px outset #ffe999;
@@ -51,8 +48,8 @@ body {
 }
 .cw-class {
   background-image: url('./Images/classbg.jpeg');
-  color: white;
-  text-shadow: 0.15em 0 black;
+  color: rgb(228, 228, 228);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   font-size: 18px;
   font-weight: 800;
   border: 5px outset #ffe999;
@@ -64,8 +61,8 @@ body {
 }
 .cw-equip {
   background-image: url('./Images/equipbg.jpeg');
-  color: white;
-  text-shadow: 0.15em 0 black;
+  color: rgb(228, 228, 228);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   font-size: 18px;
   font-weight: 800;
   border: 5px outset #ffe999;
@@ -77,8 +74,8 @@ body {
 }
 .cw-spell {
   background-image: url('./Images/spellsbg.jpeg');
-  color: white;
-  text-shadow: 0.15em 0 black;
+  color: rgb(228, 228, 228);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   font-size: 18px;
   font-weight: 800;
   border: 5px outset #ffe999;
@@ -90,8 +87,8 @@ body {
 }
 .cw-bg {
   background-image: url('./Images/rubytexture.jpeg');
-  color: white;
-  text-shadow: 0.15em 0 black;
+  color: rgb(228, 228, 228);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   font-size: 18px;
   font-weight: 800;
   border: 5px outset #ffe999;
@@ -122,11 +119,24 @@ body {
   background-image: url('./Images/goldtexture.jpg');
   color: white;
   font-family: luminari;
-  text-shadow: 0.15em 0 black;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   font-size: 19px;
   font-weight: 900;
   border: 5px outset #ffe100fc;
   cursor: pointer;
+}
+
+.model-container {
+  margin-top: 100px;
+  display: flex;
+  gap: 100px;
+}
+
+.model {
+  border: 15px double #F7CE00;
+  border-radius: 40px;
+  background: linear-gradient(to bottom right, #814d00, #ffe205e7, white, #ffe205e7, #814d00);
+  max-width: 20%;
 }
 
 .navbar{
