@@ -133,7 +133,7 @@
 }
 
 .model {
-  border: 10px double #F7CE00;
+  border: 15px double #F7CE00;
   border-radius: 50px;
   background: linear-gradient(to bottom right, #814d00, #ffe205e7, white, #ffe205e7, #814d00);
 }

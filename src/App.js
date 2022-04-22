@@ -20,7 +20,11 @@ export default function App() {
         const [classValue, setClassValue] = useState('')
         const [spellValue, setSpellValue] = useState('')
         const [equipValue, setEquipValue] = useState('')
-        const [image, setImage] = useState('')
+        const [isCharOneVisible, setCharOneVisible] = useState(false)
+        const [isCharTwoVisible, setCharTwoVisible] = useState(false)
+        const [isCharThreeVisible, setCharThreeVisible] = useState(false)
+        const [isCharFourVisible, setCharFourVisible] = useState(false)
+        const [isCharFiveVisible, setCharFiveVisible] = useState(false)
 
         const handleWindowClick = () => {
             setWindowState(!windowState)
@@ -37,9 +41,22 @@ export default function App() {
         const handleEquipValue = (e) => {
             setEquipValue(e.target.textContent)
         }
-        const handleAppearanceValue = (e) => {
-            setImage(e.currentTarget.value)
+        const handleCharOneVisible = () => {
+            setCharOneVisible(!isCharOneVisible)
         }
+        const handleCharTwoVisible = () => {
+            setCharTwoVisible(!isCharTwoVisible)
+        }
+        const handleCharThreeVisible = () => {
+            setCharThreeVisible(!isCharThreeVisible)
+        }
+        const handleCharFourVisible = () => {
+            setCharFourVisible(!isCharFourVisible)
+        }
+        const handleCharFiveVisible = () => {
+            setCharFiveVisible(!isCharFiveVisible)
+        }
+
 
     return (
     <Router>
@@ -49,7 +66,16 @@ export default function App() {
             classValue={classValue}
             spellValue={spellValue}
             equipValue={equipValue}
-            image={image}
+            isCharOneVisible={isCharOneVisible}
+            handleCharOneVisible={handleCharOneVisible}
+            isCharTwoVisible={isCharTwoVisible}
+            handleCharTwoVisible={handleCharTwoVisible}
+            isCharThreeVisible={isCharThreeVisible}
+            handleCharThreeVisible={handleCharThreeVisible}
+            isCharFourVisible={isCharFourVisible}
+            handleCharFourVisible={handleCharFourVisible}
+            isCharFiveVisible={isCharFiveVisible}
+            handleCharFiveVisible={handleCharFiveVisible}
             /> 
         : null}
         <Switch>
@@ -57,7 +83,13 @@ export default function App() {
             WELCOME
           </Route>
           <Route exact path="/appearance">
-            <Appearance handleAppearanceValue={handleAppearanceValue}/>
+            <Appearance 
+                handleCharOneVisible={handleCharOneVisible}
+                handleCharTwoVisible={handleCharTwoVisible}
+                handleCharThreeVisible={handleCharThreeVisible}
+                handleCharFourVisible={handleCharFourVisible}
+                handleCharFiveVisible={handleCharFiveVisible}
+            />
           </Route>
           <Route exact path="/stories">
             <BackgroundContainer handleStoryValue={handleStoryValue} />
