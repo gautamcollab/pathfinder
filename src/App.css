@@ -109,6 +109,7 @@ body {
   width: 80%;
   left: 20%;
   top: 10%;
+  overflow: auto;
 }
 
 .character-window img {
