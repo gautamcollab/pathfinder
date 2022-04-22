@@ -6,7 +6,7 @@ function NavBar({windowState, handleWindowClick}) {
     return (
         <nav className="navbar"> 
             <Link to='/'>
-              <button className="navbutton">Home</button>
+              <button className="navbutton" img="">Home</button>
             </Link>
             <Link to='/appearance'>
               <button className="navbutton">Appearance</button>
@@ -23,7 +23,7 @@ function NavBar({windowState, handleWindowClick}) {
             <Link to='/spells'>
               <button className="navbutton">Spells</button>
             </Link>
-            <button className="char-button" onClick={handleWindowClick}>{windowState ? 'Hide Character' : 'Show Character'}</button>
+            <button className="navbutton" onClick={handleWindowClick}>{windowState ? 'Hide Character' : 'Show Character'}</button>
            
         </nav>
     )
