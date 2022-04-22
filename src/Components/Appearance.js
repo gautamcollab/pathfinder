@@ -1,10 +1,10 @@
 import imageData from './CharacterImages'
 
-function Appearance() {
+function Appearance({handleAppearanceValue}) {
     // console.log(imageData)
     return (
         <div className="model-container">
-            <img className="model" src={imageData.Char1} alt="alchemist" width="500" height="500"></img>
+            <img onClick={handleAppearanceValue}className="model" src={imageData.Char1} alt="alchemist" width="500" height="500"></img>
             <img className="model" src={imageData.Char2} alt="barbarian" width="500" height="500"></img>
             <img className="model" src={imageData.Char3} alt="battlemage" width="500" height="500"></img>
             <img className="model" src={imageData.Char4} alt="champion" width="500" height="500"></img>

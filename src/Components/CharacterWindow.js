@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import NameForm from './NameForm'
 
-function CharacterWindow({storyValue, classValue, spellValue, equipValue}) {
+function CharacterWindow({storyValue, classValue, spellValue, equipValue, image}) {
     const [name, setName] = useState('')
     return (
         <div className="character-window">
@@ -10,6 +10,7 @@ function CharacterWindow({storyValue, classValue, spellValue, equipValue}) {
                 Your Character
             </div>
             {/* <img src={defaultCharacter} alt="Base Character"></img> */}
+            <img src={image} alt="clicked image"></img>
             <div className="cw-name">
                 Name: { name }
             </div >

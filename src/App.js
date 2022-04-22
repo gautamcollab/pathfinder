@@ -20,6 +20,8 @@ export default function App() {
         const [classValue, setClassValue] = useState('')
         const [spellValue, setSpellValue] = useState('')
         const [equipValue, setEquipValue] = useState('')
+        const [image, setImage] = useState('')
+
         const handleWindowClick = () => {
             setWindowState(!windowState)
         }
@@ -35,7 +37,9 @@ export default function App() {
         const handleEquipValue = (e) => {
             setEquipValue(e.target.textContent)
         }
-
+        const handleAppearanceValue = (e) => {
+            setImage(e.currentTarget.value)
+        }
 
     return (
     <Router>
@@ -45,6 +49,7 @@ export default function App() {
             classValue={classValue}
             spellValue={spellValue}
             equipValue={equipValue}
+            image={image}
             /> 
         : null}
         <Switch>
@@ -52,7 +57,7 @@ export default function App() {
             WELCOME
           </Route>
           <Route exact path="/appearance">
-            <Appearance />
+            <Appearance handleAppearanceValue={handleAppearanceValue}/>
           </Route>
           <Route exact path="/stories">
             <BackgroundContainer handleStoryValue={handleStoryValue} />
