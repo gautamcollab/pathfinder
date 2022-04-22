@@ -275,3 +275,8 @@ body {
   transform: scale(1.1);
   background: linear-gradient(185deg, teal, gold);
 }
+
+.homepage {
+  margin-top: 100px;
+  margin-left: 15%;
+}

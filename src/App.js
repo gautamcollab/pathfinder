@@ -12,6 +12,7 @@ import EquipmentCard from "./Components/EquipmentCard"
 import SpellCard from "./Components/SpellCard"
 import CharacterWindow from './Components/CharacterWindow'
 import Appearance from './Components/Appearance'
+import HomeBg from './Images/homebg.jpeg'
 import "./App.css"
 
 export default function App() {
@@ -80,7 +81,7 @@ export default function App() {
         : null}
         <Switch>
           <Route exact path="/"> 
-            Welcome
+            <img className="homepage" src={HomeBg} alt="homepage"/>
           </Route>
           <Route exact path="/appearance">
             <Appearance 
