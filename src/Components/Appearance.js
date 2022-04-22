@@ -1,35 +1,29 @@
-import { useState } from 'react'
+import imageData from './CharacterImages'
 
 function Appearance() {
-    const imageData = {
-        'src/Images/Characters/alchemist.jpeg': 'Char1',
-        'src/Images/Characters/Barbarian.jpeg': 'Char2',
-        'src/Images/Characters/battlemage.jpeg': 'Char3',
-        'src/Images/Characters/Champion.jpeg': 'Char4',
-        'src/Images/Characters/Cleric.jpeg': 'Char5',
-        'src/Images/Characters/creature.jpeg': 'Char6',
-        'src/Images/Characters/dragon.jpeg': 'Char7',
-        'src/Images/Characters/dragonguy.jpeg': 'Char8',
-        'src/Images/Characters/Investigator.jpeg': 'Char9',
-        'src/Images/Characters/magus.jpeg': 'Char10',
-        'src/Images/Characters/Oracle.jpeg': 'Char11',
-        'src/Images/Characters/pumpkin.jpeg': 'Char12',
-        'src/Images/Characters/ranger.jpeg': 'Char13',
-        'src/Images/Characters/rogue.jpeg': 'Char14',
-        'src/Images/Characters/skeleton.jpeg': 'Char15',
-        'src/Images/Characters/sorceress.jpeg': 'Char16',
-        'src/Images/Characters/troll.jpeg': 'Char17',
-        'src/Images/Characters/werewolf.jpeg': 'Char18',
-        'src/Images/Characters/witch.jpeg': 'Char19',
-        'src/Images/Characters/wizard.jpeg': 'Char20',
-    }
-    console.log(imageData)
-    for(src in imageData) {
-
-    }
+    // console.log(imageData)
     return (
-        <div>
-
+        <div className="model-container">
+            <img src={imageData.Char1} alt="alchemist" width="500" height="500"></img>
+            <img src={imageData.Char2} alt="barbarian" width="500" height="500"></img>
+            <img src={imageData.Char3} alt="battlemage" width="500" height="500"></img>
+            <img src={imageData.Char4} alt="champion" width="500" height="500"></img>
+            <img src={imageData.Char5} alt="cleric" width="500" height="500"></img>
+            <img src={imageData.Char6} alt="creature" width="500" height="500"></img>
+            <img src={imageData.Char7} alt="dragon" width="500" height="500"></img>
+            <img src={imageData.Char8} alt="dragonguy" width="500" height="500"></img>
+            <img src={imageData.Char9} alt="investigator" width="500" height="500"></img>
+            <img src={imageData.Char10} alt="magus" width="500" height="500"></img>
+            <img src={imageData.Char11} alt="oracle" width="500" height="500"></img>
+            <img src={imageData.Char12} alt="pumpkin" width="500" height="500"></img>
+            <img src={imageData.Char13} alt="ranger" width="500" height="500"></img>
+            <img src={imageData.Char14} alt="rogue" width="500" height="500"></img>
+            <img src={imageData.Char15} alt="skeleton" width="500" height="500"></img>
+            <img src={imageData.Char16} alt="sorceress" width="500" height="500"></img>
+            <img src={imageData.Char17} alt="troll" width="500" height="500"></img>
+            <img src={imageData.Char18} alt="werewolf" width="500" height="500"></img>
+            <img src={imageData.Char19} alt="witch" width="500" height="500"></img>
+            <img src={imageData.Char20} alt="wizard" width="500" height="500"></img>
         </div>
     )
 }
