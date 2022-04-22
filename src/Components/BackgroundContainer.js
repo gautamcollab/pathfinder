@@ -15,11 +15,13 @@ function BackgroundContainer({handleStoryValue}) {
       }, [])
 
     return (
-      stories.map((element) => {
+        <div className="stories-container">
+      {stories.map((element) => {
           return (
               <BackgroundItem key={element.name} story={element} handleStoryValue={handleStoryValue} />
           )
-      })
+      })}
+      </div>
     )
 }
 export default BackgroundContainer

@@ -16,12 +16,8 @@ function Spells({ handleSpellValue, spell }) {
     return (
             <div className="spell" onMouseEnter={spellDesc} onMouseLeave={spellDesc}>
                 <div onClick={handleSpellValue} 
-                
-                
                 >{ name }</div>
-                <div className="spell-desc"
-                //stretches out container, needs css styling
-                > 
+                <div className="spell-desc">
                    {desc ? value : null } 
                 </div>
                 <div className="spell-info-hidden togglable">All info here</div>
