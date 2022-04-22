@@ -127,7 +127,15 @@
 }
 
 .model-container {
+  margin-top: 100px;
   display: flex;
+  gap: 100px;
+}
+
+.model {
+  border: 10px double #F7CE00;
+  border-radius: 50px;
+  background: linear-gradient(to bottom right, #814d00, #ffe205e7, white, #ffe205e7, #814d00);
 }
 
 .navbar{
