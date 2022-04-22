@@ -12,6 +12,7 @@ import EquipmentCard from "./Components/EquipmentCard"
 import SpellCard from "./Components/SpellCard"
 import CharacterWindow from './Components/CharacterWindow'
 import Appearance from './Components/Appearance'
+import Video from './Components/Video'
 import "./App.css"
 
 export default function App() {
@@ -80,7 +81,7 @@ export default function App() {
         : null}
         <Switch>
           <Route exact path="/"> 
-            WELCOME
+            Welcome
           </Route>
           <Route exact path="/appearance">
             <Appearance 
