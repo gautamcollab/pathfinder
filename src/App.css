@@ -134,8 +134,9 @@
 
 .model {
   border: 15px double #F7CE00;
-  border-radius: 50px;
+  border-radius: 40px;
   background: linear-gradient(to bottom right, #814d00, #ffe205e7, white, #ffe205e7, #814d00);
+  max-width: 20%;
 }
 
 .navbar{
