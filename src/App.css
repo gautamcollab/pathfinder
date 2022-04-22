@@ -1,5 +1,5 @@
 body {
-  display: grid;
+  background-image: url('https://img.wallpapersafari.com/desktop/1600/900/62/27/zetRsl.jpg');
 }
 
 .App {
@@ -103,6 +103,14 @@ body {
 }
 /*End Character Window Text Fields */
 
+.char-desc{
+  position: fixed;
+  top: 0;
+  width: 80%;
+  left: 20%;
+  top: 10%;
+}
+
 .character-window img {
   height: 300px;
   width: 300px;
@@ -153,10 +161,10 @@ body {
   cursor: pointer;
 }
 
+
 .class-section{
   display: grid;
-  grid-template: 20% / 80%
-
+  grid-template: 20% / 80%;
 }
 
 .class-container{
@@ -194,12 +202,13 @@ body {
   flex: auto;
   border: 1px solid black;
   text-align: center;
-  background: linear-gradient(135deg, #DDA0DD, #f0fff0 )
+  background: linear-gradient(185deg, teal, silver);
+  width: 200px;
 }
 
 .equip:hover{
   transform: scale(1.1);
-  background: linear-gradient(135deg, #DDA0DD, #FA8072)
+  background: linear-gradient(185deg, teal, gold);
 }
 
 .spell-container{
@@ -213,13 +222,13 @@ body {
   flex: auto;
   border: 1px solid black;
   text-align: center;
-  background: linear-gradient(135deg, #DDA0DD, #f0fff0 );
+  background: linear-gradient(185deg, teal, silver);
   width: 200px;
 }
 
 .spell:hover{
   transform: scale(1.1);
-  background: linear-gradient(135deg, #DDA0DD, #FA8072);
+  background: linear-gradient(185deg, teal, gold);
 }
 
 .spell-desc{
@@ -232,4 +241,24 @@ body {
 
 .spell-info-visible {
   display: block;
+}
+
+.stories-container{
+  margin: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+}
+
+.story {
+  flex: auto;
+  border: 1px solid black;
+  text-align: center;
+  background: linear-gradient(185deg, teal, silver);
+  width: 200px;
+}
+
+.story:hover{
+  transform: scale(1.1);
+  background: linear-gradient(185deg, teal, gold);
 }
