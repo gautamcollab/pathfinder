@@ -17,10 +17,6 @@ function ClassContainer({handleClassValue}){
    
     return (
         <div className="class-section"> 
-            <div className="class-desc"> 
-            Hello World!
-    
-
         <div className="class-container">
         {charClass.map((element) => {
             return(
@@ -28,7 +24,6 @@ function ClassContainer({handleClassValue}){
             )
         })}
                     </div>
-                </div>
       </div>
     );
 }
