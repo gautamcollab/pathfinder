@@ -5,15 +5,6 @@ import imageData from './CharacterImages'
 
 function CharacterWindow({storyValue, classValue, spellValue, equipValue, isCharOneVisible, isCharTwoVisible, isCharThreeVisible, isCharFourVisible, isCharFiveVisible, handleCharOneVisible, handleCharTwoVisible, handleCharThreeVisible, handleCharFourVisible, handleCharFiveVisible}) {
     const [name, setName] = useState('')
-
-    // const handleSpecificCharacter = () => {
-    //     if (isCharOneVisible === true) {
-    //         return <img src={imageData.Char1}></img>
-    //     }  else if (<img src={imageData.Char1}></img> !== true) {
-    //         return null
-    //     }
-    //         return null
-    // }
     return (
         <div className="character-window">
             <div className="cw-title">

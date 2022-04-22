@@ -115,7 +115,7 @@ body {
 }
 
 .character-window img {
-  height: 300px;
+  height: 350px;
   width: 300px;
   border: 10px double #F7CE00;
   background: linear-gradient(to bottom right, #814d00, #ffe205e7, white, #ffe205e7, #814d00);
