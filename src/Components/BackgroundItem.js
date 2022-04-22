@@ -11,10 +11,11 @@ function BackgroundItem({ story, handleStoryValue }) {
     return(
       <div className="story" onMouseEnter={storyDesc} onMouseLeave={storyDesc}> 
           <div onClick={handleStoryValue}>
-            <div>{name}</div>
             <div className="stories"> 
             {desc ? value : null } </div>
             </div>
+          <strong>{ name } : </strong>
+          { value }
         </div>
     )
 }
