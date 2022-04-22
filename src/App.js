@@ -12,7 +12,6 @@ import EquipmentCard from "./Components/EquipmentCard"
 import SpellCard from "./Components/SpellCard"
 import CharacterWindow from './Components/CharacterWindow'
 import Appearance from './Components/Appearance'
-import Video from './Components/Video'
 import "./App.css"
 
 export default function App() {

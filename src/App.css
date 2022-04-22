@@ -186,6 +186,7 @@ body {
 }
 
 .char-class{
+  font-family: luminari;
   position: relative;
   height: 35px;
   width: 200px;
@@ -208,6 +209,7 @@ body {
 }
 
 .equip{
+  font-family: luminari;
   flex: auto;
   border: 1px solid black;
   text-align: center;
@@ -228,6 +230,7 @@ body {
 }
 
 .spell{
+  font-family: luminari;
   flex: auto;
   border: 1px solid black;
   text-align: center;
@@ -260,6 +263,7 @@ body {
 }
 
 .story {
+  font-family: luminari;
   flex: auto;
   border: 1px solid black;
   text-align: center;
