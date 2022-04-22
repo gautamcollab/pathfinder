@@ -176,7 +176,7 @@ body {
 }
 
 .navbutton:hover{
-  background-color: #FFFAFF;
+  background: linear-gradient(185deg, teal, gold);
   transform: scale(1.1);
   cursor: pointer;
 }
