@@ -24,8 +24,8 @@ function EquipmentCard({handleEquipValue}){
                 <Equipment handleEquipValue={handleEquipValue} key={element.name} equip = {element}/>
             )
         })}
-      </div>
-        )
+        </div>
+    )
 }
 
 
